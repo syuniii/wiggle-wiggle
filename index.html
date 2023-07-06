@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <title>위글위글</title>
+</head>
+<body>
+    <!-- 전체 박스 -->
+    <div id="wrap">
+        <div class="box firstbox">
+
+            <div class="page1">
+                <div class="logo">
+                    <a href="#none">
+                        <!-- a 태그에 나중에 연결 https://wiggle-wiggle.com/ -->
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="icon">
+                    <div class="butterfly">
+                        <img class="bf1" src="./img/butterfly.png" alt="">
+                        <img class="bf2" src="./img/butterfly.png" alt="">
+                    </div>
+                </div>
+                <div class="icon">
+                    <div class="flower first">
+                        <img class="f1" src="./img/flower.png" alt="">
+                    </div>
+                    <div class="flower second">
+                        <img class="f2" src="./img/flower.png" alt="">
+                    </div>
+                    <div class="flower third">
+                        <img class="f3" src="./img/flower.png" alt="">
+                    </div>
+                </div>
+
+                <!-- <div class="scroll-down">
+                    <p>scroll</p>
+                    <img src="./img/arrow.svg" alt="">
+                </div> -->
+            </div>
+
+            <div class="page2">
+                <div data-aos="fade-right" data-aos-duration="1000" class="content_box">
+                    <div class="c-img">
+                        <img src="./img/page2-1.jpg" alt="">
+                    </div>
+
+                    <div class="c-txt">
+                        <!-- <p>01.</p> -->
+                        <p data-aos="fade-up" data-aos-duration="2000">반복적이지만 즐거운 것은 없을까?</p>
+                        <p data-aos="fade-up" data-aos-duration="2500">위글위글은 단순한 물음에서 시작되었습니다.<br>
+                            톡톡 튀는 컬러와 개성 넘치는 패턴을 통해<br>
+                            당신의 일상을 즐거움으로 가득 채워보는 것은 어떨까요?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page3">
+                <div data-aos="fade-left" data-aos-duration="1000" class="content_box">
+                    <div class="c-txt">
+                        <!-- <p>02.</p> -->
+                        <p data-aos="fade-down" data-aos-duration="2000">Relish The Repetition!</p>
+                        <p data-aos="fade-down" data-aos-duration="2500">위글위글과 함께하는 당신의 일상이 즐거웠으면 좋겠습니다.</p>
+                    </div>
+
+                    <div class="c-img">
+                        <img src="./img/page3-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page4">
+                <div class="welcome">
+                    <img src="./img/welcome.gif" alt="">
+                </div>
+            </div>
+
+            <div class="page5">
+                <div class="store">
+                    <img src="./img/store.gif" alt="">
+                </div>
+            </div>
+
+            <div class="page6">
+                <div class="line1">
+                    <p>Flagship Store</p>
+                </div>
+                <div class="store-info">
+                    <div class="st-pre">
+                        <img src="./img/store-info.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="title">Address</p>
+                        <p class="content">서울특별시 강남구 언주로 168길 31<br>
+                            위글위글 도산 플래그십 스토어</p>
+                        <p class="title">Operating hours</p>
+                        <p class="content">11:00 - 20:00</p>
+                        <p class="title">Contact</p>
+                        <p class="content">02 - 6959 - 2051</p>
+                    </div>
+                </div>
+                <div class="line2">
+                    <p>Flagship Store</p>
+                </div>
+            </div>
+
+            <div class="page7">
+                <p class="title" data-scroll>
+                    위글위글, 검은 폐가를 만들다.
+                </p>
+                <div class="why">
+                    <img src="./img/why.png" alt="">
+                </div>
+            </div>
+
+            <div class="page8">
+                <div class="content" data-scroll>
+                    <p>여러가지 색을 섞으면 결국 검은색이 되듯이,<br>
+                        색채의 한계 없이 세상의 다채로운 컬러를 전개 하겠다는 의미와</p>
+                </div>
+                <div class="palette">
+                    <img src="./img/palette.png" alt="">
+                </div>
+                <div class="content" data-scroll>
+                    <p>온통 검은색으로 뒤덮인 세상에서도<br>
+                        나만의 개성과 색채를 드러낼 수 있다는 의미를 담았습니다.</p>
+                </div>
+            </div>
+        </div>
+        <!-- 가로 스크롤 -->
+        <div class="hOffset h-container">
+            <section class="box sec sec1 page9">
+                <div class="floor-box">
+                    <p class="floor">1F</p>
+                    <div class="preview">
+                        <img src="./img/1F.gif" alt="">
+                    </div>
+                    <p class="sell">계산대<br>
+                                    포토 부스</p>
+                </div>
+            </section>
+
+            <section class="box sec sec2 page10">
+                <div class="floor-box">
+                    <p class="floor">2F</p>
+                    <div class="preview">
+                        <img src="./img/2F.gif" alt="">
+                    </div>
+                    <p class="sell">반려인<br>
+                                    반려동물</p>
+                </div>
+            </section>
+
+            <section class="box sec sec3 page11">
+                <div class="floor-box">
+                    <p class="floor">3F</p>
+                    <div class="preview">
+                        <img src="./img/3F.gif" alt="">
+                    </div>
+                    <p class="sell">패션<br>
+                                    홈웨어</p>
+                </div>
+            </section>
+
+            <section class="box sec sec4 page12">
+                <div class="floor-box">
+                    <p class="floor">4F</p>
+                    <div class="preview">
+                        <img src="./img/4F.gif" alt="">
+                    </div>
+                    <p class="sell">리빙<br>
+                                    테크</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="page13">
+            <div class="title">
+                <p id="invite"></p>
+            </div>
+            <div class="invite">
+                <img src="./img/invite.png" alt="">
+            </div>
+            <div class="product">
+                <img src="./img/product.png" alt="">
+            </div>
+        </div>
+
+        <footer>
+            <div class="f-box">
+                <div class="company-info">
+                    <div class="f-title">
+                        <p>Company info</p>
+                    </div>
+                    <div class="fix-content">
+                        <div class="address">
+                            <p class="title">Address. Head Office.</p>
+                            <p class="content">서울특별시 강남구 테헤란로44길 8 (역삼동) 4층</p>
+                        </div>
+                        <div class="address">
+                            <p class="title mar-add">Flagship Store.</p>
+                            <p class="content">서울특별시 강남구 언주로 168길 3</p>
+                        </div>
+                    </div>
+                    <div class="f-content">
+                        <p class="title">Corporate Name.</p>
+                        <p class="content">주식회사 아트쉐어</p>
+                    </div>
+                    <div class="f-content">
+                        <p class="title">Business License.</p>
+                        <p class="content">201-86-38817</p>
+                    </div>
+                </div>
+                <div class="cs-center">
+                    <div class="f-title">
+                        <p>CS Center</p>
+                    </div>
+                    <div class="f-content">
+                        <p class="title">Contact.</p>
+                        <p class="content">1533 - 8266</p>
+                    </div>
+                    <div class="f-content">
+                        <p class="title">Operating hours.</p>
+                        <p class="content">9:30 - 17:00</p>
+                    </div>
+                    <div class="f-content">
+                        <p class="title">Closed.</p>
+                        <p class="content">Sat/Sun/Holiday</p>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="f-title">
+                        <p>Social</p>
+                    </div>
+                    <div class="f-content">
+                        <a href="https://www.instagram.com/wigglewiggle.official/" class="insta">
+                            <img src="./img/icon-instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- 제이쿼리 먼저 연결 -->
+<script src="./js/jquery-1.12.4.js"></script>
+<!-- aos js -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- 가로 스크롤 js -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script> -->
+<!-- scroll-out -->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<!-- typelt -->
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<!-- 내 js -->
+<script src="./js/script.js"></script>
+</body>
+</html>

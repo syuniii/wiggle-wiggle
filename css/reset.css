@@ -1,0 +1,58 @@
+@charset "uft-8";
+
+@font-face {
+    font-family: "huglove";
+    src: url(../font/huglove/);
+}
+@font-face {
+    font-family: "PyeongChangPeace-Bold";
+    src: url(../font/PyeongChangPeace/PyeongChangPeace-Bold.ttf);
+}
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url(../font/Pretendard/Pretendard-Regular.ttf);
+}
+@font-face {
+    font-family: "GmarketSansTTFBold";
+    src: url(../font/GmarketSansTTF/GmarketSansTTFBold.ttf);
+}
+@font-face {
+    font-family: "GmarketSansTTFLight";
+    src: url(../font/GmarketSansTTF/GmarketSansTTFLight.ttf);
+}
+@font-face {
+    font-family: "GmarketSansTTFMedium";
+    src: url(../font/GmarketSansTTF/GmarketSansTTFMedium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "GmarketSansTTFLight";
+    overflow-x: hidden;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+ol,ul,li{
+    list-style: none;
+}
+img,svg,video,iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+body::-webkit-scrollbar {
+    width: 15px;  /* 스크롤바의 너비 */
+    background: #18181A;
+}
+body::-webkit-scrollbar-thumb {
+    height: 15%; /* 스크롤바의 길이 */
+    background: #f5f5f5; /* 스크롤바의 색 */
+    border-radius: 10px; /* 스크롤바의 둥글기 */
+}

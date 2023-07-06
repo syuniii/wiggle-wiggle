@@ -1,0 +1,1346 @@
+@charset "uft-8";
+
+/* 1페이지 */
+.page1{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.logo{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: logo-scale 5s;
+    animation-iteration-count: 1;
+}
+.logo img{
+    width: 700px;
+}
+@keyframes logo-scale {
+    0%{
+        transform: none;
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    40%{
+        transform: rotate(-10deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(10deg) scale(1.1);
+    }
+    60% {
+        transform: rotate(-10deg) scale(1.1);
+    }
+    70% {
+        transform: rotate(0deg) scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.butterfly{
+    position: absolute;
+    top: 25%;
+    left: 64%;
+    transform: rotate(-20deg);
+}
+.bf1{
+    width: 72px;
+    animation: move1 2s infinite;
+}
+.bf2{
+    width: 80px;
+    transform: rotate(36.18deg);
+    animation: move2 3s infinite;
+}
+@keyframes move1 {
+    0%{
+        transform: none;
+    }
+    25%{
+        transform: translate3d(5px,-15px,0);
+    }
+    50%{
+        transform: translate3d(0,0,0);
+    }
+    75%{
+        transform: translate3d(-5px,-10px,0);
+    }
+    100%{
+        transform: none;
+    }
+}
+@keyframes move2 {
+    0%{
+        transform: none;
+    }
+    25%{
+        transform: translate3d(-5px,10px,0);
+    }
+    50%{
+        transform: translate3d(0,0,0);
+    }
+    75%{
+        transform: translate3d(8px,5px,0);
+    }
+    100%{
+        transform: none;
+    }
+}
+.flower{
+    position: absolute;
+}
+.first{
+    top: 53%;
+    left: 11%;
+    transform: matrix(-0.99, 0.14, 0.14, 0.99, 0, 0);
+}
+.f1{
+    width: 240px;
+    animation: f-scale1 3s infinite;
+}
+.second{
+    top: 80%;
+    left: 5%;
+}
+.f2{
+    width: 146px;
+    animation: f-scale2 3s infinite;
+}
+.third{
+    top: 79%;
+    left: 20%;
+    transform: rotate(-21.73deg);
+}
+.f3{
+    width: 180px;
+    animation: f-scale3 2s infinite;
+}
+@keyframes f-scale1 {
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: none;
+    }
+}
+@keyframes f-scale2 {
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: none;
+    }
+}
+@keyframes f-scale3 {
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: none;
+    }
+}
+/* .scroll-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-down p{
+    font-size: 26px;
+    color: #ffffff;
+}
+.scroll-down img{
+    width: 20px;
+    margin-bottom: 50px;
+} */
+
+/* 2페이지 */
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+.page2 .content_box{
+    display: flex;
+    align-items: center;
+    padding-top: 300px;
+}
+.page2 .content_box .c-img{
+    width: 960px;
+}
+.page2 .content_box .c-img img{
+    filter: drop-shadow(3px 3px 2px #cccccc)
+}
+.page2 .content_box .c-txt{
+    margin-left: 70px;
+    color: #18181A;
+}
+/* .page2 .content_box .c-txt p:nth-child(1){
+    font-family: "Pretendard-Regular";
+    font-size: 1.25em;
+    margin-bottom: 20px;
+} */
+.page2 .content_box .c-txt p:nth-child(1){
+    font-family: "PyeongChangPeace-Bold";
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+.page2 .content_box .c-txt p:nth-child(2){
+    font-family: "Pretendard-Regular";
+    font-size: 1.25em;
+}
+
+
+/* 3페이지 */
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+.page3 .content_box{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 200px;
+}
+.page3 .content_box .c-txt{
+    margin-right: 70px;
+    color: #18181A;
+    text-align: right;
+}
+/* .page3 .content_box .c-txt p:nth-child(1){
+    font-family: "Pretendard-Regular";
+    font-size: 1.25em;
+    margin-bottom: 20px;
+} */
+.page3 .content_box .c-txt p:nth-child(1){
+    font-family: "huglove";
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+.page3 .content_box .c-txt p:nth-child(2){
+    font-family: "Pretendard-Regular";
+    font-size: 1.25em;
+}
+.page3 .content_box .c-img{
+    width: 960px;
+}
+.page3 .content_box .c-img img{
+    filter: drop-shadow(-3px 3px 2px #cccccc)
+}
+
+/* 4페이지 */
+.page4{
+    background-color: #18181A;
+    display: flex;
+    justify-content: center;
+}
+.welcome{
+    box-sizing: border-box;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* 5페이지 */
+.page5{
+    background-color: #18181A;
+}
+.store img{
+    width: 100%;
+}
+
+/* 6페이지 */
+.page6{
+    width: 100%;
+    height: 100vh;
+    background-color: #F0CE2F;
+    display: flex;
+    justify-content: center;
+}
+.line1{
+    font-family: "GmarketSansTTFBold";
+    writing-mode: vertical-rl;
+    font-size: 5rem;
+    margin-right: 100px;
+    background: url(../img/page6-store.png);
+    color: transparent;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+.store-info{
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.st-pre img{
+    width: 29.166vw;
+}
+.info{
+    margin-left: 80px;
+}
+.info .title{
+    font-family: "GmarketSansTTFBold";
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+.info .content{
+    font-family: "Pretendard-Regular";
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.info .content:last-child{
+    margin-bottom: 0;
+}
+.line2{
+    font-family: "GmarketSansTTFBold";
+    writing-mode: vertical-rl;
+    font-size: 5rem;
+    margin-left: 100px;
+    background: url(../img/post.jpg);
+    background-position-x: -10%;
+    background-position-y: 30%;
+    color: transparent;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+/* 7페이지 */
+.page7{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(#FFFFFF 30%, #18181A);
+    position: relative;
+}
+.page7 .title{
+    font-family: "PyeongChangPeace-Bold";
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+.why{
+    margin: 0 auto;
+}
+.why img{
+    width: 25.156vw;
+    object-fit: contain;
+}
+
+/* 8페이지 */
+.page8{
+    width: 100%;
+    background-color: #18181A;
+}
+.page8 .content{
+    color: #FFFFFF;
+    font-family: "GmarketSansTTFBold";
+    font-size: 30px;
+    text-align: center;
+}
+.page8 .content:nth-child(1){
+    padding-top: 110px;
+    box-sizing: border-box;
+}
+.page8 .palette{
+    width: 475px;
+    padding: 140px 0 140px 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.page8 .content:last-child{
+    padding-bottom: 110px;
+    box-sizing: border-box; 
+}
+
+[data-scroll] {
+    opacity: 0;
+    will-change: transform, scale, opacity;
+    transform: translateY(6rem) scale(0.93);
+    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  [data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  [data-scroll="out"] {
+    opacity: 0;
+  }
+
+/* 가로 스크롤 시작 */
+
+.hOffset{
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    display: flex;
+    /* max-width: 100%; */
+}
+.page9, .page10, .page11, .page12{
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+/* 9페이지 */
+.page9{
+    width: 100%;
+    height: 100vh;
+    background-color: #18181A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page9 .floor-box{
+    width: 83.333vw;
+    /* 1600/1920 *100 = 83.333333 -> 유동값으로 잡기 */
+    /* 내가 잡고 싶은 크기 / 모니터 크기 * 100 = */
+    background-color: #FE0034;
+}
+.floor{
+    font-family: "GmarketSansTTFBold";
+    font-size: 70px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.preview{
+    width: 52.083vw;
+    height: 500px;
+    margin: 0 auto;
+}
+.sell{
+    font-family: "GmarketSansTTFLight";
+    font-size: 50px;
+    color: #FFFFFF;
+    text-align: end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+/* 10페이지 */
+.page10{
+    width: 100%;
+    height: 100vh;
+    background-color: #18181A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page10 .floor-box{
+    width: 83.333vw;
+    background-color: #FF9900;
+}
+
+/* 11페이지 */
+.page11{
+    width: 100%;
+    height: 100vh;
+    background-color: #18181A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page11 .floor-box{
+    width: 83.333vw;
+    background-color: #0034AA;
+}
+
+/* 12페이지 */
+.page12{
+    width: 100%;
+    height: 100vh;
+    background-color: #18181A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page12 .floor-box{
+    width: 83.333vw;
+    background-color: #9813CC;
+}
+
+/* 13페이지 */
+.page13{
+    width: 100%;
+    height: 110vh;
+    background-color: #18181A;
+    position: relative;
+}
+.page13 .title{
+    display: flex;
+    justify-content: center;
+    font-family: "PyeongChangPeace-Bold";
+    font-size: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+.invite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.invite img {
+    width: 33.854vw;
+}
+.product{
+    width: 57.291vw;
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    animation: product-scale 8s infinite;
+}
+@keyframes product-scale {
+    0%{
+        transform: scale(0);
+    }
+    30%{
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #18181A;
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-box{
+    display: flex;
+}
+.company-info, .cs-center{
+    margin-right: 200px;
+}
+.f-title{
+    font-family: "GmarketSansTTFBold";
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+.address, .f-content{
+    display: flex;
+}
+.address .title.mar-add{
+    margin-left: 85px;
+}
+.fix-content .title, .f-content .title{
+    font-family: "GmarketSansTTFBold";
+    font-size: 16px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+.insta img{
+    width: 35px;
+    object-fit: contain;
+}
+
+
+/* 반응형 시작 */
+@media (max-width : 1850px){
+
+    /* 2페이지 */
+    .page2 .content_box .c-txt p:nth-child(1){
+        font-size: 3.3em;
+    }
+    .page2 .content_box .c-txt p:nth-child(2){
+        font-size: 1.2em;
+    }
+
+    /* 3페이지 */
+    .page3 .content_box .c-txt p:nth-child(1) {
+        font-size: 3.5em;
+    }
+    .page3 .content_box .c-txt p:nth-child(2){
+        font-size: 1.2em;
+    }
+
+    /* 13페이지 */
+    .product{
+        left: 19%;
+    }
+
+}
+
+@media (max-width : 1810px){
+
+    /* 2페이지 */
+    .page2 .content_box .c-txt p:nth-child(1){
+        font-size: 3.1em;
+    }
+
+}
+
+@media (max-width : 1760px){
+
+    /* 2페이지 */
+    .page2 .content_box .c-txt p:nth-child(1){
+        font-size: 3em;
+    }
+
+}
+
+@media (max-width : 1735px){
+
+    /* 2페이지 */
+    .page2 .content_box .c-txt p:nth-child(1){
+        font-size: 2.9em;
+    }
+
+}
+
+@media (max-width : 1600px){
+
+    /* 6페이지 */
+    .store-info{
+        width: auto;
+    }
+
+    /* 7페이지 */
+    .page7 .title{
+        font-size: 65px;
+    }
+
+}
+
+@media (max-width : 1500px){
+
+    /* 1페이지 */
+    .logo img{
+        width: 600px;
+    }
+
+    /* 6페이지 */
+    .line1{
+        font-size: 4.5rem;
+        margin-right: 80px;
+    }
+    .info .title{ 
+        font-size: 38px;
+    }
+    .info .content {
+        font-size: 28px;
+    }
+    .line2{
+        font-size: 4.5rem;
+        margin-left: 80px;
+    }
+
+    /* 7페이지 */
+    .page7 .title{
+        font-size: 60px;
+    }
+
+    /* 13페이지 */
+    .page13{
+        height: 100vh;
+    }
+    .page13 .title{
+        padding-top: 100px;
+    }
+    .product{
+        top: 35%;
+    }
+
+}
+
+@media (max-width : 1310px){
+
+    /* 1페이지 */
+    .logo img {
+        width: 550px;
+    }
+
+    /* footer */
+    .company-info, .cs-center{
+        margin-right: 150px;
+    }
+
+}
+
+@media (max-width : 1250px){
+
+    /* 1페이지 */
+    .f1{
+        width: 220px;
+    }
+    .f2{
+        width: 126px;
+    }
+    .f3{
+        width: 160px;
+    }
+
+    /* 6페이지 */
+    .line1{
+        font-size: 4.4rem;
+        margin-right: 70px;
+    }
+    .info .title{
+        font-size: 36px;
+        margin-bottom: 14px;
+    }
+    .info .content{
+        font-size: 26px;
+        margin-bottom: 38px;
+    }
+    .line2{
+        font-size: 4.4rem;
+        margin-left: 70px;
+    }
+
+    /* 7페이지 */
+    .page7 .title{
+        font-size: 55px;
+    }
+    
+    /* 13페이지 */
+    .page13{
+        height: 90vh;
+    }
+    .page13 .title{
+        font-size: 45px;
+    }
+    .product{
+        top: 36%;
+    }
+
+}
+
+@media (max-width : 1200px){
+
+    /* 1페이지 */
+    .logo img{
+        width: 530px;
+    }
+    .f1{
+        width: 200px;
+    }
+    .f2{
+        width: 106px;
+    }
+    .f3{
+        width: 140px;
+    }
+
+    /* 2페이지 */
+    .page2 .content_box .c-txt{
+        margin-left: 50px;
+    }
+
+    /* 3페이지 */
+    .page3 .content_box .c-txt{
+        margin-right: 50px;
+    }
+
+    /* 가로 스크롤 제외 */
+    .hOffset{
+        display: none;
+    }
+
+    /* footer */
+    .company-info, .cs-center{
+        margin-right: 100px;
+    }
+
+}
+
+@media (max-width : 1150px){
+
+    /* 6페이지 */
+    .line1{
+        font-size: 4.3rem;
+        margin-right: 60px;
+    }
+    .line2{
+        font-size: 4.3rem;
+        margin-left: 60px;
+    }
+
+}
+
+@media (max-width : 1100px){
+
+    /* 13페이지 */
+    .page13 .title {
+        font-size: 40px;
+    }
+
+    /* footer */
+    .company-info, .cs-center{
+        margin-right: 80px;
+    }
+
+}
+
+@media (max-width : 1070px){
+
+    /* 6페이지 */
+    .line1{
+        font-size: 4rem;
+        margin-right: 40px;
+    }
+    .line2{
+        font-size: 4rem;
+        margin-left: 40px;
+    }
+
+    /* footer */
+    .f-title{
+        font-size: 21px;
+    }
+    .fix-content .title, .f-content .title{
+        font-size: 14px;
+    }
+    .fix-content .content, .f-content .content{
+        font-size: 14px;
+    }
+    .insta img{
+        width: 32px;
+    }
+
+}
+
+@media (max-width : 1020px){
+
+    /* 1페이지 */
+    .logo img{
+        width: 500px;
+    }
+    .f1{
+        width: 180px;
+    }
+    .f2{
+        width: 86px;
+    }
+    .f3{
+        width: 120px;
+    }
+
+    /* 6페이지 */
+    .info{
+        margin-left: 50px;
+    }
+    .info .title{
+        font-size: 34px;
+    }
+    .info .content{
+        font-size: 24px;
+    }
+
+    /* 7페이지 */
+    .page7{
+        height: 120vh;
+    }
+    .page7 .title{
+        font-size: 50px;
+        margin-bottom: 150px;
+    }
+    .page8 .palette{
+        width: 400px;
+        padding: 100px 0 100px 0;
+    }
+
+    /* 8페이지 */
+    .page8 .content{
+        font-size: 30px;
+    }
+
+    /* footer */
+    .company-info, .cs-center{
+        margin-right: 65px;
+    }
+
+}
+
+@media (max-width : 1000px){
+
+    /* footer */
+    footer{
+        height: 400px;
+        justify-content: stretch;
+        padding-left: 60px;
+        box-sizing: border-box;
+    }
+    .f-box{
+        flex-direction: column;
+    }
+    .f-title {
+        margin-bottom: 8px;
+        margin-top: 5px;
+    }
+    .company-info, .cs-center {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .insta img {
+        width: 30px;
+    }
+    
+}
+
+@media (max-width : 930px){
+
+    /* 2페이지 */
+    .page2 .content_box .c-txt p:nth-child(1){
+        font-size: 2.6em;
+    }
+    .page2 .content_box .c-txt p:nth-child(2){
+        font-size: 1.1em;
+    }
+
+    /* 6페이지 */
+    .line1{
+        margin-right: 100px;
+    }
+    .store-info{
+        flex-direction: column;
+    }
+    .st-pre{
+        margin-bottom: 50px;
+    }
+    .st-pre img {
+        width: 360px;
+    }
+    .info{
+        margin-left: 0;
+    }
+    .line2{
+        margin-left: 100px;
+    }
+
+    /* 13페이지 */
+    .page13{
+        height: 75vh;
+    }
+    .page13 .title{
+        font-size: 35px;
+    }
+}
+
+@media (max-width : 890px){
+
+    /* 2페이지 */
+    .page2 .content_box{
+        flex-direction: column;
+        padding-top: 200px;
+    }
+    .page2 .content_box .c-txt{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .page2 .content_box .c-txt p:nth-child(2){
+        font-size: 1.3em;
+    }
+    
+    /* 3페이지 */
+    .page3 .content_box{
+        flex-direction: column-reverse;
+        padding-top: 130px;
+    }
+    .page3 .content_box .c-txt{
+        margin-right: 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+@media (max-width : 850px){
+
+    /* 2페이지 */
+    .page2 .content_box{
+        padding-top: 150px;
+    }
+
+    /* 3페이지 */
+    .page3 .content_box{
+        padding-top: 100px;
+    }
+
+    /* 7페이지 */
+    .page7{
+        height: 100vh;
+    }
+
+    /* 8페이지 */
+    .page8 .content{
+        font-size: 28px;
+    }
+
+    /* 13페이지 */
+    .product {
+        top: 36%;
+    }
+}
+
+@media (max-width : 800px){
+    
+    /* 1페이지 */
+    .first{
+        top: 56%;
+    }
+    .third{
+        left: 29%;  
+    }
+
+    /* 6페이지 */
+    .st-pre img {
+        width: 300px;
+    }
+}
+
+@media (max-width : 700px){
+
+    /* 1페이지 */
+    .logo img {
+        width: 450px;
+    }
+
+    /* 6페이지 */
+    .line1 {
+        font-size: 3.5rem;
+        margin-right: 85px;
+    }
+    .info .title {
+        font-size: 30px;
+    }
+    .info .content {
+        font-size: 22px;
+    }
+    .line2 {
+        font-size: 3.5rem;
+        margin-left: 85px;
+    }
+
+    /* 13페이지 */
+    .page13 {
+        height: 70vh;
+    }
+    .product {
+        top: 46%;
+    }
+}
+
+@media (max-width : 650px){
+
+    /* 6페이지 */
+    .st-pre img {
+        width: 280px;
+    }
+
+    /* 7페이지 */
+    .page7 .title{
+        font-size: 48px;
+    }
+}
+
+@media (max-width : 630px){
+
+    /* 1페이지 */
+    .logo img {
+        width: 430px;
+    }
+    .f1 {
+        width: 170px;
+    }
+
+    /* 2페이지 */
+    .page2 .content_box .c-txt p:nth-child(1) {
+        font-size: 2.4em;
+    }
+    .page2 .content_box .c-txt p:nth-child(2) {
+        font-size: 1.2em;
+    }
+
+
+    /* 3페이지 */
+    .page3 .content_box .c-txt p:nth-child(1) {
+        font-size: 3.2em;
+    }
+
+    /* 6페이지 */
+    .line1 {
+        font-size: 3.3rem;
+        margin-right: 70px;
+    }
+    .info .title {
+        font-size: 29px;
+    }
+    .info .content {
+        font-size: 20px;
+    }
+    .line2 {
+        font-size: 3.3rem;
+        margin-left: 70px;
+    }
+
+    /* 7페이지 */
+    .page7 .title {
+        font-size: 45px;
+    }
+
+    /* 8페이지 */
+    .page8 .palette{
+        width: 350px;
+    }
+
+    /* footer */
+    footer{
+        padding-left: 40px;
+    }
+}
+
+@media (max-width : 580px){
+
+    /* 6페이지 */
+    .line1,.line2{
+        display: none;
+    }
+
+    /* 7페이지 */
+    .why img {
+        width: 250px;
+    }
+
+    /* footer */
+    footer {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width : 580px){
+    
+    /* footer */
+    .f-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width : 520px){
+
+    /* footer */
+    .f-title {
+        font-size: 18px;
+    }
+    .fix-content .title, .f-content .title {
+        font-size: 12px;
+    }
+    .fix-content .content, .f-content .content {
+        font-size: 12px;
+    }
+    .insta img {
+        width: 24px;
+    }
+}
+
+@media (max-width : 500px){
+
+    /* 1페이지 */
+    .logo img {
+        width: 370px;
+    }
+    .bf1{
+        width: 62px;
+    }
+    .bf2{
+        width: 70px;
+    }
+
+    /* 2페이지 */
+    .page2 .content_box .c-txt p:nth-child(1) {
+        font-size: 2.1em;
+    }
+    .page2 .content_box .c-txt p:nth-child(2) {
+        font-size: 1.1em;
+    }
+
+    /* 3페이지 */
+    .page3 .content_box .c-txt p:nth-child(1) {
+        font-size: 3em;
+    }
+    .page3 .content_box .c-txt p:nth-child(2) {
+        font-size: 1.1em;
+    }
+
+    /* 6페이지 */
+    .info .content {
+        font-size: 19px;
+    }
+
+    /* 7페이지 */
+    .page7 .title {
+        font-size: 48px;
+    }
+
+    /* 8페이지 */
+    .page8 .content {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width : 450px){
+
+    /* 7페이지 */
+    .page7 .title {
+        font-size: 44px;
+    }
+
+    /* 8페이지 */
+    .page8 .content {
+        font-size: 22px;
+    }
+    .page8 .palette {
+        width: 300px;
+    }
+
+    /* 13페이지 */
+    .page13 .title {
+        font-size: 36px;
+    }
+    .invite img {
+        width: 250px;
+    }
+    .product {
+        width: 400px;
+        left: 1%;
+        top: 50%;
+    }
+
+    /* footer */
+    footer {
+        padding-left: 8px;
+    }
+}
+
+@media (max-width : 420px) {
+
+    /* 8페이지 */
+    .page8 .content {
+        font-size: 20px;
+    }
+
+    /* footer */
+    .fix-content .title, .f-content .title {
+        font-size: 10px;
+    }
+    .fix-content .content, .f-content .content {
+        font-size: 11px;
+    }
+}
+
+@media (max-width : 390px){
+
+    /* 1페이지 */
+    .logo img {
+        width: 350px;
+    }
+    .first {
+        top: 62%;
+    }
+    .f1 {
+        width: 150px;
+    }
+    .second {
+        top: 87%;
+        left: 9%;
+    }
+    .f2 {
+        width: 66px;
+    }
+    .third{
+        left: 37%;
+        top: 83%;
+    }
+    .f3 {
+        width: 100px;
+    }
+
+    /* 2페이지 */
+    .page2 .content_box .c-txt p:nth-child(1) {
+        font-size: 1.5em;
+    }
+    .page2 .content_box .c-txt p:nth-child(2) {
+        font-size: 1em;
+    }
+
+    /* 3페이지 */
+    .page3 .content_box .c-txt p:nth-child(1) {
+        font-size: 2em;
+    }
+    .page3 .content_box .c-txt p:nth-child(2) {
+        font-size: 1em;
+    }
+
+    /* 7페이지 */
+    .page7 .title {
+        font-size: 40px;
+    }
+
+    /* 13페이지 */
+    .page13 .title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width : 375px){
+
+    /* 2페이지 */
+    .page2 .content_box .c-txt{
+        margin-top: 20px;
+    }
+    .page2 .content_box .c-txt p:nth-child(1){
+        margin-bottom: 10px;
+    }
+
+    /* 3페이지 */
+    .page3 .content_box .c-txt{
+        margin-top: 20px;
+    }
+    .page3 .content_box .c-txt p:nth-child(1){
+        margin-bottom: 10px;
+    }
+
+    /* 8페이지 */
+    .page8 .content {
+        font-size: 19px;
+    }
+
+    /* 13페이지 */
+    .page13 .title {
+        font-size: 32px;
+    }
+}
